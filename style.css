@@ -1,35 +1,108 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box
 }
 
 body {
-    background: linear-gradient(-30deg, rgb(58, 58, 233), #ee7742, #23a6d5);
-    background-size: 200% 200%;
-    background-repeat: no-repeat;
-    animation: gradient 18s ease infinite;
+    background: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
     height: 100vh;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.container {
+    padding: 10px 10%;
 }
 
-.wrap {
+.nav1 {
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: burlywood;
+    padding: 10px 5%;
+}
+
+.logo {
+    width: 140px;
+    font-size: 40px;
+    color: rgb(187, 12, 68);
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: rgb(187, 12, 68);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    color: #ffff;
+    transition: 0.5s ease;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
     text-align: center;
 }
 
-img {
-    width: 30vh;
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: rgb(187, 12, 68);
+}
+
+.hr1 {
+    width: 10%;
+    justify-items: center;
     margin: auto;
+    background-color: brown;
+    height: 4px;
+    border: none;
+}
+
+#about {
+    padding: 10px 10%;
+    height: 100vh;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#about h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.skill {
+    font-size: 35px;
+}
+
+.skills {
+    margin: 5px;
+}
+
+.skills,
+li {
+    margin: 8px;
+    list-style: none;
 }
